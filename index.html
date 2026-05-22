@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name="google-site-verification" content="bK0AJ9ywDb2dLJ6IemtjLP4-ddj8rvLC22a3AAOGWUY" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+<meta name="description" content="Vera Cruz Expedições — Travessia dos Lençóis Maranhenses." />
+<title>Vera Cruz Expedições — Caminhe pelos Lençóis. Viva o extraordinário.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="loader" id="loader">
+  <div class="loader-compass"><i class="fa-solid fa-compass"></i></div>
+  <div class="loader-text">VERA CRUZ EXPEDIÇÕES</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="IMG_1482.PNG" alt="Vera Cruz Expedições" />
+      <span>Vera Cruz <em>Expedições</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#sobre">Sobre</a><a href="#diferenciais">Diferenciais</a>
+      <a href="#travessias">Travessias</a><a href="#roteiros">Roteiros</a>
+      <a href="#galeria">Galeria</a><a href="#como-funciona">Como Funciona</a><a href="#faq">FAQ</a>
+    </nav>
+    <a href="#reservar" class="btn-cta nav-cta" data-magnetic><span>Reservar</span><i class="fa-solid fa-arrow-right"></i></a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre">Sobre</a><a href="#diferenciais">Diferenciais</a>
+    <a href="#travessias">Travessias</a><a href="#roteiros">Roteiros</a>
+    <a href="#galeria">Galeria</a><a href="#como-funciona">Como Funciona</a><a href="#faq">FAQ</a>
+    <a href="#reservar" class="btn-cta">Reservar Agora</a>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="dot"></span><span>Lençóis Maranhenses · Travessia Premium</span></div>
+    <h1 class="hero-title">
+      <span class="line"><em>Caminhe</em> pelos Lençóis.</span>
+      <span class="line">Viva o <strong>extraordinário</strong>.</span>
+    </h1>
+    <p class="hero-sub">Roteiros personalizados, atendimento 100% digital e experiências autênticas no deserto brasileiro mais surreal do mundo.</p>
+    <div class="hero-actions">
+      <a href="#reservar" class="btn-cta primary" data-magnetic><span>Quero Minha Travessia</span><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#travessias" class="btn-cta ghost" data-magnetic><i class="fa-solid fa-mountain-sun"></i><span>Ver Experiências</span></a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>2+</strong><span>Anos de expedições</span></div>
+      <div><strong>10%</strong><span>Entrada para reservar</span></div>
+      <div><strong>100%</strong><span>Atendimento digital</span></div>
+    </div>
+  </div>
+  <a href="#sobre" class="scroll-hint"><span>Role para descobrir</span><i class="fa-solid fa-arrow-down"></i></a>
+</section>
+
+<section class="section sobre" id="sobre">
+  <div class="container split">
+    <div class="split-left reveal" data-reveal="left">
+      <span class="section-tag">01 — Sobre</span>
+      <h2 class="section-title">A agência que <em>desenha</em> sua próxima aventura.</h2>
+    </div>
+    <div class="split-right reveal" data-reveal="right">
+      <p>Somos uma agência especializada na <strong>travessia dos Lençóis Maranhenses</strong>. Trabalhamos com atendimento 100% digital, oferecendo praticidade, conforto e segurança desde o primeiro contato até o final da experiência.</p>
+      <p>Criamos <strong>roteiros personalizados</strong> para cada cliente, cuidando de todos os detalhes da viagem para que você apenas aproveite a aventura.</p>
+      <p>Nosso objetivo é proporcionar experiências autênticas, turismo de aventura e momentos inesquecíveis em um dos lugares mais incríveis do Brasil.</p>
+      <p><strong>Localização:</strong> Rua São Francisco, Riacho</p>
+      <div class="mini-cards">
+        <div class="mini-card"><i class="fa-solid fa-route"></i><span>Roteiros sob medida</span></div>
+        <div class="mini-card"><i class="fa-solid fa-shield-halved"></i><span>Segurança total</span></div>
+        <div class="mini-card"><i class="fa-solid fa-mobile-screen"></i><span>100% digital</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section diferenciais" id="diferenciais">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">02 — Diferenciais</span>
+      <h2 class="section-title">Por que <em>viajar conosco</em>.</h2>
+      <p class="section-sub">Cada detalhe pensado para uma experiência sem fricção, do primeiro contato à última duna.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card reveal"><i class="fa-solid fa-headset"></i><h3>Atendimento 100% digital</h3><p>Tudo pelo WhatsApp, sem burocracia.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-map-location-dot"></i><h3>Roteiros personalizados</h3><p>Cada expedição é única, feita pra você.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-life-ring"></i><h3>Suporte completo</h3><p>Acompanhamento antes, durante e depois.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-shield-heart"></i><h3>Segurança & conforto</h3><p>Equipamentos e equipe preparados.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-mountain-sun"></i><h3>Experiência autêntica</h3><p>O verdadeiro Lençóis Maranhenses.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-percent"></i><h3>Reserva com 10%</h3><p>Garanta sua vaga com pequena entrada.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-rotate-left"></i><h3>Cancelamento grátis</h3><p>Flexibilidade pra você planejar tranquilo.</p></div>
+      <div class="diff-card reveal"><i class="fa-brands fa-whatsapp"></i><h3>Resposta rápida</h3><p>Atendimento ágil pelo WhatsApp.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-person-hiking"></i><h3>Guias experientes</h3><p>Credenciados pelo ICMBio.</p></div>
+      <div class="diff-card reveal"><i class="fa-solid fa-star"></i><h3>Exclusividade</h3><p>Grupos reduzidos e atenção dedicada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section travessias" id="travessias">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">03 — Experiências</span>
+      <h2 class="section-title">Travessias <em>inesquecíveis</em>.</h2>
+      <p class="section-sub">Selecione um ou mais passeios para incluir no formulário. Veja o roteiro completo de cada um na seção abaixo.</p>
+    </div>
+    <div class="tours-grid" id="toursGrid">
+      <article class="tour-card reveal" data-tour="Super Trekking — 3 dias e 2 noites" data-roteiro="1">
+        <div class="tour-img" style="background-image:url('IMG_0762.JPG.jpeg')"></div>
+        <div class="tour-body">
+          <span class="tour-tag">Mais aventureiro</span>
+          <h3>Super Trekking</h3>
+          <p class="tour-duration"><i class="fa-regular fa-clock"></i> 3 dias e 2 noites · 40 km</p>
+          <p>Lagoa Bonita → Mucambo → Rancharia → Santo Amaro. Mergulhos em lagoas, pernoites com nativos e a Lagoa do Junco.</p>
+          <div class="tour-actions">
+            <button class="btn-select" data-add>
+              <span class="add-label"><i class="fa-solid fa-plus"></i> Selecionar</span>
+              <span class="added-label"><i class="fa-solid fa-check"></i> Adicionado</span>
+            </button>
+            <a href="#roteiro-1" class="btn-detail">Ver roteiro <i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </article>
+      <article class="tour-card reveal" data-tour="Trekking Tradicional — 3 dias e 2 noites" data-roteiro="2">
+        <div class="tour-img" style="background-image:url('IMG_1121.JPG.jpeg')"></div>
+        <div class="tour-body">
+          <span class="tour-tag alt">Clássico</span>
+          <h3>Trekking Tradicional</h3>
+          <p class="tour-duration"><i class="fa-regular fa-clock"></i> 3 dias e 2 noites · 34 km</p>
+          <p>Barco pelo Rio Preguiças → Atins → Baixa Grande → Queimada dos Britos → Santo Amaro.</p>
+          <div class="tour-actions">
+            <button class="btn-select" data-add>
+              <span class="add-label"><i class="fa-solid fa-plus"></i> Selecionar</span>
+              <span class="added-label"><i class="fa-solid fa-check"></i> Adicionado</span>
+            </button>
+            <a href="#roteiro-2" class="btn-detail">Ver roteiro <i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </article>
+      <article class="tour-card reveal" data-tour="Travessia 4 dias e 3 noites" data-roteiro="3">
+        <div class="tour-img" style="background-image:url('IMG_1378.JPG.jpeg')"></div>
+        <div class="tour-body">
+          <span class="tour-tag gold">Premium</span>
+          <h3>Travessia 4 dias</h3>
+          <p class="tour-duration"><i class="fa-regular fa-clock"></i> 4 dias e 3 noites · ~58 km</p>
+          <p>Trekking completo + 15 km de caiaque pelo Rio Alegre até Sol de Amaro.</p>
+          <div class="tour-actions">
+            <button class="btn-select" data-add>
+              <span class="add-label"><i class="fa-solid fa-plus"></i> Selecionar</span>
+              <span class="added-label"><i class="fa-solid fa-check"></i> Adicionado</span>
+            </button>
+            <a href="#roteiro-3" class="btn-detail">Ver roteiro <i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </article>
+      <article class="tour-card reveal" data-tour="Travessia 5 dias e 4 noites" data-roteiro="4">
+        <div class="tour-img" style="background-image:url('IMG_1497.JPG.jpeg')"></div>
+        <div class="tour-body">
+          <span class="tour-tag">Mais completo</span>
+          <h3>Travessia 5 dias</h3>
+          <p class="tour-duration"><i class="fa-regular fa-clock"></i> 5 dias e 4 noites · ~58 km</p>
+          <p>Roteiro mais imersivo: pesca, noite estrelada na cabana do Ediel e caiaque pelo Rio Alegre.</p>
+          <div class="tour-actions">
+            <button class="btn-select" data-add>
+              <span class="add-label"><i class="fa-solid fa-plus"></i> Selecionar</span>
+              <span class="added-label"><i class="fa-solid fa-check"></i> Adicionado</span>
+            </button>
+            <a href="#roteiro-4" class="btn-detail">Ver roteiro <i class="fa-solid fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section roteiros" id="roteiros">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">04 — Roteiros completos</span>
+      <h2 class="section-title">O passo a passo de cada <em>expedição</em>.</h2>
+      <p class="section-sub">Clique nos passeios abaixo para abrir o roteiro completo dia a dia.</p>
+    </div>
+    <div class="roteiros-tabs" id="roteirosTabs">
+      <button class="rot-tab active" data-tab="1">Super Trekking 3D/2N</button>
+      <button class="rot-tab" data-tab="2">Tradicional 3D/2N</button>
+      <button class="rot-tab" data-tab="3">Travessia 4D/3N</button>
+      <button class="rot-tab" data-tab="4">Travessia 5D/4N</button>
+    </div>
+
+    <div class="rot-panel active" id="roteiro-1">
+      <div class="rot-head"><h3>Super Trekking — 3 dias e 2 noites</h3><p>Travessia clássica intensa de Lagoa Bonita até Santo Amaro, com mergulhos nas melhores lagoas da região.</p></div>
+      <div class="rot-days">
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 01</span><h4>Lagoa Bonita → Mucambo · 14 km</h4><p>Saída às 3h30 da manhã em 4x4 até o circuito Lagoa Bonita (50 min). Após o café da manhã, subimos as dunas para apreciar o nascer do sol e iniciamos os 14 km até a vila Mucambo, onde pernoitamos na casa de nativos. O percurso é marcado por muitas paradas para mergulho — é a parte que mais tem lagoas na região.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 02</span><h4>Mucambo → Rancharia · 14 km</h4><p>Café da manhã às 5h e mais 14 km de trilhas começando ao nascer do sol. Destino: Rancharia, escondida entre dunas e natureza, onde encontramos a Lagoa Bicudo Gordo — uma das mais lindas dos Lençóis, em referência a um peixe da região.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 03</span><h4>Rancharia → Santo Amaro · 12 km</h4><p>Mais 12 km até a Lagoa do Junco, paisagem fora do comum com dunas altas. Aqui ficam as maiores e mais profundas lagoas do parque. Ao final, um 4x4 nos espera e leva de volta à hospedagem.</p></div>
+      </div>
+      <div class="rot-included"><h5>O valor inclui</h5><ul>
+        <li><i class="fa-solid fa-check"></i> Transportes terrestres ida e volta</li>
+        <li><i class="fa-solid fa-check"></i> Guia nativo credenciado pelo ICMBio</li>
+        <li><i class="fa-solid fa-check"></i> Todas as refeições</li>
+        <li><i class="fa-solid fa-check"></i> Pernoite na casa dos nativos</li>
+      </ul></div>
+      <a href="#reservar" class="btn-cta primary" data-magnetic data-add-from-tab="Super Trekking — 3 dias e 2 noites"><i class="fa-brands fa-whatsapp"></i><span>Reservar este roteiro</span></a>
+    </div>
+
+    <div class="rot-panel" id="roteiro-2">
+      <div class="rot-head"><h3>Trekking Tradicional — 3 dias e 2 noites</h3><p>Travessia inesquecível por lagoas escondidas, oásis autênticos e vilarejos isolados. Conexão com a natureza e silêncio.</p></div>
+      <div class="rot-days">
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 01</span><h4>Barreirinhas → Rio Preguiças → Atins → Baixa Grande · 8 km</h4><p>O dia começa com passeio de barco pelo Rio Preguiças, com paisagens ribeirinhas belíssimas. Parada estratégica em Atins, onde pegamos um 4x4 até o início da caminhada. Iniciamos a trilha leve de aproximadamente 8 km até o Oásis de Baixa Grande.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 02</span><h4>Baixa Grande → Queimada dos Britos · 12 km</h4><p>Após o café, seguimos 12 km entre lagoas e dunas até o próximo oásis. Chegamos em Queimada dos Britos, vilarejo ainda mais isolado, onde almoçamos e descansamos. Tarde livre para curtir a simplicidade da vida no deserto tropical.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 03</span><h4>Queimada dos Britos → Betânia → Santo Amaro · 14 km</h4><p>Partimos bem cedo para a etapa final. Caminhamos 14 km em direção a uma lagoa nas proximidades de Betânia, com pausa para banho e descanso. Em seguida, embarcamos em um veículo que nos leva até Santo Amaro, finalizando a travessia com segurança.</p></div>
+      </div>
+      <div class="rot-included"><h5>O que está incluso</h5><ul>
+        <li><i class="fa-solid fa-check"></i> Passeio de barco pelo Rio Preguiças</li>
+        <li><i class="fa-solid fa-check"></i> Transporte terrestre (Atins → trilha e Betânia → Santo Amaro)</li>
+        <li><i class="fa-solid fa-check"></i> 2 noites em casas de moradores</li>
+        <li><i class="fa-solid fa-check"></i> Todas as refeições</li>
+        <li><i class="fa-solid fa-check"></i> Guia local experiente e credenciado</li>
+      </ul></div>
+      <a href="#reservar" class="btn-cta primary" data-magnetic data-add-from-tab="Trekking Tradicional — 3 dias e 2 noites"><i class="fa-brands fa-whatsapp"></i><span>Reservar este roteiro</span></a>
+    </div>
+
+    <div class="rot-panel" id="roteiro-3">
+      <div class="rot-head"><h3>Travessia 4 dias e 3 noites</h3><p>Trekking completo dos Lençóis somado a uma descida emocionante de caiaque pelo Rio Alegre.</p></div>
+      <div class="rot-days">
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 01</span><h4>Lagoa Bonita → Mucambo · 14 km</h4><p>Saída às 3h30 em 4x4 até o circuito Lagoa Bonita (50 min). Após o café, subimos as dunas para o nascer do sol e fazemos 14 km até Mucambo, pernoitando na casa de nativos. Trecho com mais lagoas da região.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 02</span><h4>Mucambo → Rancharia · 14 km</h4><p>Café da manhã às 4h30 e mais 14 km até Rancharia. Lá encontramos a Lagoa Bicudo Gordo, uma das mais lindas dos Lençóis.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 03</span><h4>Rancharia → Betânia · 13 km</h4><p>Acordamos às 4h, café e partida cedo para ver o nascer do sol. São 13 km até o vilarejo Betânia, um lugar único cercado pelo Rio Alegre.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 04</span><h4>Caiaque pelo Rio Alegre · 17 km</h4><p>Pequeno trajeto de 2 km até onde pegamos os caiaques. 15 km de remadas com aventura pelas águas do Rio Alegre até o restaurante Sol de Amaro, para a última refeição e despedida dos Lençóis.</p></div>
+      </div>
+      <div class="rot-included"><h5>O pacote inclui</h5><ul>
+        <li><i class="fa-solid fa-check"></i> Transportes terrestres ida e volta</li>
+        <li><i class="fa-solid fa-check"></i> Guia nativo credenciado pelo ICMBio</li>
+        <li><i class="fa-solid fa-check"></i> Todas as refeições</li>
+        <li><i class="fa-solid fa-check"></i> Caiaque</li>
+        <li><i class="fa-solid fa-check"></i> Todas as pernoites na casa dos nativos</li>
+      </ul></div>
+      <a href="#reservar" class="btn-cta primary" data-magnetic data-add-from-tab="Travessia 4 dias e 3 noites"><i class="fa-brands fa-whatsapp"></i><span>Reservar este roteiro</span></a>
+    </div>
+
+    <div class="rot-panel" id="roteiro-4">
+      <div class="rot-head"><h3>Travessia 5 dias e 4 noites</h3><p>Roteiro mais imersivo, com pernoite na cabana do nativo Ediel, pesca, céu estrelado e caiaque pelo Rio Alegre.</p></div>
+      <div class="rot-days">
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 01</span><h4>Lagoa Bonita → Mucambo · 14 km</h4><p>Saída às 3h30 em 4x4 até Lagoa Bonita. Após o café, 14 km até Mucambo com pernoite na casa de nativos. Trecho com mais lagoas da região.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 02</span><h4>Mucambo → Cabana do Ediel · 7 km</h4><p>Café às 5h e 7 km de trilhas ao nascer do sol até a casa do nativo Ediel — simples e acolhedora. Uma cabana no meio das dunas, com lagoas para pescar e céu estrelado para contemplar à noite.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 03</span><h4>Cabana do Ediel → Rancharia · 8 km</h4><p>Café às 7h e mais 8 km até Rancharia, onde encontramos a famosa Lagoa Bicudo Gordo, uma das mais belas dos Lençóis.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 04</span><h4>Rancharia → Betânia · 13 km</h4><p>10 km até a Lagoa do Junco, com dunas altas e vistas incríveis — região das maiores e mais profundas lagoas do parque. Depois, mais 3 km até o ponto de apoio para a noite, com o Rio Alegre passando bem na porta.</p></div>
+        <div class="rot-day reveal"><span class="rot-day-num">Dia 05</span><h4>Caiaque pelo Rio Alegre · 15 km</h4><p>Descida de caiaque de 15 km pelo Rio Alegre até Santo Amaro. Última parada no restaurante Sol de Amaro para o almoço e despedida dos Lençóis Maranhenses.</p></div>
+      </div>
+      <div class="rot-included"><h5>O pacote inclui</h5><ul>
+        <li><i class="fa-solid fa-check"></i> Transportes terrestres ida e volta</li>
+        <li><i class="fa-solid fa-check"></i> Caiaque</li>
+        <li><i class="fa-solid fa-check"></i> Guia nativo credenciado pelo ICMBio</li>
+        <li><i class="fa-solid fa-check"></i> Todas as refeições</li>
+        <li><i class="fa-solid fa-check"></i> Todas as pernoites na casa dos nativos</li>
+      </ul></div>
+      <a href="#reservar" class="btn-cta primary" data-magnetic data-add-from-tab="Travessia 5 dias e 4 noites"><i class="fa-brands fa-whatsapp"></i><span>Reservar este roteiro</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section galeria" id="galeria">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">05 — Galeria</span>
+      <h2 class="section-title">O cenário <em>fala por si</em>.</h2>
+      <p class="section-sub">Substitua os placeholders pelas suas fotos e vídeos reais.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gal-item tall reveal" style="background-image:url('IMG_0746.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_0747.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_0761.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_0762.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_0763.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_0765.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_0780.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_0832.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_0852.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1120.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1121.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1129.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1134.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1136.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1138.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1141.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1165.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1169.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1205.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1208.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1209.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1223.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1230.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1233.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1297.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1298.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1310.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1316.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1317.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1318.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1377.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1378.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1382.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1411.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1414.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1415.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1436.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1439.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1440.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1441.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1442.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1445.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1446.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1447.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1448.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1484.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1485.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1486.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1488.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1492.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1493.JPG.jpeg')"></div>
+      <div class="gal-item wide reveal" style="background-image:url('IMG_1494.JPG.jpeg')"></div>
+      <div class="gal-item tall reveal" style="background-image:url('IMG_1495.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1496.JPG.jpeg')"></div>
+      <div class="gal-item reveal" style="background-image:url('IMG_1497.JPG.jpeg')"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section como" id="como-funciona">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">06 — Como funciona</span>
+      <h2 class="section-title">Da escolha à aventura em <em>5 passos</em>.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="step-num">01</span><h3>Escolha sua travessia</h3><p>Veja as opções e selecione uma ou mais.</p></div>
+      <div class="step reveal"><span class="step-num">02</span><h3>Preencha o formulário</h3><p>Conte data, número de pessoas e dúvidas.</p></div>
+      <div class="step reveal"><span class="step-num">03</span><h3>Atendimento WhatsApp</h3><p>Resposta rápida e roteiro personalizado.</p></div>
+      <div class="step reveal"><span class="step-num">04</span><h3>Finalize a reserva</h3><p>Apenas 10% de entrada para garantir.</p></div>
+      <div class="step reveal"><span class="step-num">05</span><h3>Viva a experiência</h3><p>Aproveite — cuidamos do resto.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reservar" id="reservar">
+  <div class="container reservar-wrap">
+    <div class="reservar-info reveal" data-reveal="left">
+      <span class="section-tag light">07 — Reserva</span>
+      <h2 class="section-title light">Solicite seu <em>roteiro personalizado</em>.</h2>
+      <p class="section-sub light">Preencha rapidamente e abriremos o WhatsApp com tudo pronto pra enviar.</p>
+      <ul class="reservar-list">
+        <li><i class="fa-solid fa-check"></i> Resposta em minutos</li>
+        <li><i class="fa-solid fa-check"></i> Sem compromisso</li>
+        <li><i class="fa-solid fa-check"></i> Cancelamento grátis</li>
+      </ul>
+      <div class="reservar-payments"><span>Pix</span><span>Cartão</span><span>Parcelamento</span><span>Transferência</span></div>
+    </div>
+    <form class="reservar-form reveal" data-reveal="right" id="reservaForm" novalidate>
+      <div class="field"><label>Nome completo</label><input type="text" name="nome" required placeholder="Seu nome" /></div>
+      <div class="row">
+        <div class="field"><label>WhatsApp / Telefone</label><input type="tel" name="telefone" required placeholder="(00) 00000-0000" /></div>
+        <div class="field"><label>Pessoas</label><input type="number" name="pessoas" min="1" value="2" required /></div>
+      </div>
+      <div class="row">
+        <div class="field"><label>Data desejada</label><input type="date" name="data" required /></div>
+        <div class="field"><label>Adicionar passeio</label>
+          <select id="tourSelect" class="select-black">
+            <option value="">— escolha um passeio —</option>
+            <option value="Super Trekking — 3 dias e 2 noites">Super Trekking — 3 dias e 2 noites</option>
+            <option value="Trekking Tradicional — 3 dias e 2 noites">Trekking Tradicional — 3 dias e 2 noites</option>
+            <option value="Travessia 4 dias e 3 noites">Travessia 4 dias e 3 noites</option>
+            <option value="Travessia 5 dias e 4 noites">Travessia 5 dias e 4 noites</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label>Passeios selecionados</label>
+        <div class="chips" id="chips"><span class="chips-empty">Nenhum passeio selecionado ainda — adicione pelos cards ou pelo seletor acima.</span></div>
+      </div>
+      <div class="field"><label>Dúvidas adicionais</label><textarea name="duvidas" rows="4" placeholder="Conte aqui qualquer detalhe ou pergunta..."></textarea></div>
+      <button type="submit" class="btn-cta primary full" data-magnetic><i class="fa-brands fa-whatsapp"></i><span>Enviar para o WhatsApp</span></button>
+      <p class="form-note">Ao enviar, o WhatsApp será aberto com sua mensagem pronta.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section avaliacoes" id="avaliacoes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">08 — Avaliações</span>
+      <h2 class="section-title">Quem foi, <em>recomenda</em>.</h2>
+    </div>
+    <div class="reviews-wrap">
+      <div class="reviews-track" id="reviewsTrack">
+        <div class="review"><div class="stars">★★★★★</div><p>"Experiência transformadora. Organização impecável do início ao fim."</p><span class="reviewer">— Mariana S.</span></div>
+        <div class="review"><div class="stars">★★★★★</div><p>"Guias incríveis, paisagens de outro planeta. Vou voltar com certeza!"</p><span class="reviewer">— Rafael T.</span></div>
+        <div class="review"><div class="stars">★★★★★</div><p>"Atendimento humano e ágil. Roteiro personalizado funcionou perfeitamente."</p><span class="reviewer">— Camila R.</span></div>
+        <div class="review"><div class="stars">★★★★★</div><p>"Segurança e conforto foram além das expectativas."</p><span class="reviewer">— João P.</span></div>
+        <div class="review"><div class="stars">★★★★★</div><p>"Melhor viagem da minha vida. Cada detalhe pensado pra gente."</p><span class="reviewer">— Beatriz L.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="container faq-wrap">
+    <div class="reveal">
+      <span class="section-tag">09 — FAQ</span>
+      <h2 class="section-title">Perguntas <em>frequentes</em>.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary>Como funciona a reserva?<i class="fa-solid fa-plus"></i></summary><p>Você escolhe os passeios, preenche o formulário e abrimos o WhatsApp com sua solicitação. Confirmamos disponibilidade e fechamos com 10% de entrada.</p></details>
+      <details class="faq-item reveal"><summary>Precisa pagar entrada?<i class="fa-solid fa-plus"></i></summary><p>Sim, apenas 10% do valor para garantir sua vaga. O restante pode ser parcelado.</p></details>
+      <details class="faq-item reveal"><summary>O cancelamento é grátis?<i class="fa-solid fa-plus"></i></summary><p>Sim, oferecemos cancelamento grátis dentro do prazo combinado no momento da reserva.</p></details>
+      <details class="faq-item reveal"><summary>O que levar para a travessia?<i class="fa-solid fa-plus"></i></summary><p>Roupas leves, protetor solar, chinelo, mochila pequena, garrafinha e disposição. Enviamos uma lista completa após a confirmação.</p></details>
+      <details class="faq-item reveal"><summary>Como funciona o roteiro?<i class="fa-solid fa-plus"></i></summary><p>Montamos um roteiro personalizado conforme seu perfil, datas e preferências. Tudo é alinhado antes da viagem.</p></details>
+      <details class="faq-item reveal"><summary>O atendimento é online?<i class="fa-solid fa-plus"></i></summary><p>Sim, 100% digital via WhatsApp, com suporte rápido e humano.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section observacoes" id="observacoes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">10 — Observações</span>
+      <h2 class="section-title">Informações <em>importantes</em>.</h2>
+      <p class="section-sub">Leia atentamente as observações e políticas para uma viagem tranquila.</p>
+    </div>
+    <div class="observacoes-content reveal">
+      <h3>OBSERVAÇÕES</h3>
+      <ul>
+        <li><i class="fa-solid fa-exclamation-triangle"></i> Fique atento aos horários de embarque e desembarque dos serviços.</li>
+        <li><i class="fa-solid fa-clock"></i> Os horários podem sofrer alterações conforme a demanda de clientes.</li>
+        <li><i class="fa-solid fa-shield-alt"></i> Não nos responsabilizamos por objetos esquecidos ou perdidos durante os serviços.</li>
+        <li><i class="fa-solid fa-cloud-rain"></i> Os passeios acontecerão mesmo com climas adversos (chuva).</li>
+      </ul>
+
+      <h3>POLÍTICAS DE CANCELAMENTO DE RESERVAS</h3>
+      <p>(De acordo com a Deliberação Normativa nº 161 de 09 de agosto de 1985, do Ministério do Turismo)</p>
+      <ul>
+        <li><i class="fa-solid fa-calendar-check"></i> 90% até 15 dias do início da viagem;</li>
+        <li><i class="fa-solid fa-calendar-check"></i> 70% até 10 dias do início da viagem;</li>
+        <li><i class="fa-solid fa-calendar-check"></i> 50% até 05 dias do início da viagem;</li>
+        <li><i class="fa-solid fa-calendar-check"></i> 30% até 02 dias do início da viagem;</li>
+        <li><i class="fa-solid fa-calendar-check"></i> Com até 01 dia de antecedência - cobramos 100%;</li>
+        <li><i class="fa-solid fa-calendar-check"></i> O não comparecimento do paxs no dia e hora marcada também implica perda total;</li>
+        <li><i class="fa-solid fa-calendar-check"></i> Caso haja transferência de passeios, nos avise com 24 horas de antecedência.</li>
+      </ul>
+
+      <h3>QUALQUER DÚVIDA ENTRE EM CONTATO:</h3>
+      <a href="https://wa.me/+5598988541526" target="_blank" class="btn-cta primary"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 98 98854-1526</a>
+      <p><i class="fa-regular fa-envelope"></i> E-mail: veracruzexpedicoes@gmail.com</p>
+
+      <h3>Localização</h3>
+      <p>Encontre nossa agência física:</p>
+      <p><i class="fa-solid fa-map-marker-alt"></i> Rua São Francisco, Riacho</p>
+      <a href="https://maps.app.goo.gl/YhNr55uASfZ1coWq5?g_st=awb" target="_blank" class="btn-cta primary" data-magnetic><i class="fa-solid fa-map"></i><span>Ver no Google Maps</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="IMG_1482.PNG" alt="Vera Cruz Expedições" />
+      <p>Caminhe pelos Lençóis. Viva o extraordinário.</p>
+    </div>
+    <div class="footer-col"><h4>Contato</h4>
+<a href="https://wa.me/+5598988541526" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> +55 98 98854-1526</a>
+      <a href="mailto:veracruzexpedicoes@gmail.com"><i class="fa-regular fa-envelope"></i> veracruzexpedicoes@gmail.com</a>
+      <p><i class="fa-solid fa-map-marker-alt"></i> Rua São Francisco, Riacho</p>
+      <a href="https://maps.app.goo.gl/YhNr55uASfZ1coWq5?g_st=awb" target="_blank"><i class="fa-solid fa-map"></i> Ver no Google Maps</a>
+    </div>
+    <div class="footer-col"><h4>Links</h4>
+      <a href="#travessias">Travessias</a><a href="#roteiros">Roteiros</a>
+      <a href="#reservar">Reservar</a><a href="#observacoes">Observações</a>
+<a href="https://wa.me/c/+5598988541526" target="_blank" rel="noopener">Catálogo WhatsApp</a>
+    </div>
+    <div class="footer-col"><h4>Social</h4>
+      <div class="socials">
+        <a href="https://www.instagram.com/vera_cruz_expedicoes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://wa.me/+5598988541526" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:veracruzexpedicoes@gmail.com" aria-label="E-mail"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Vera Cruz Expedições. Todos os direitos reservados.</span>
+    <span>Feito com cuidado para aventureiros.</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/+5598988541526" class="wpp-float" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i><span class="wpp-pulse"></span>
+</a>
+<div class="toast" id="toast"></div>
+
+<!-- LIGHTBOX MODAL -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-times"></i></button>
+    <div class="lightbox-image-wrapper">
+      <img id="lightboxImage" src="" alt="Imagem ampliada" />
+    </div>
+    <div class="lightbox-nav">
+      <button class="lightbox-prev" onclick="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="lightbox-next" onclick="nextImage()"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
