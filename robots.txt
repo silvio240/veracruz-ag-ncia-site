@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veracruzexpedicoes.com.br/sitemap.xml
