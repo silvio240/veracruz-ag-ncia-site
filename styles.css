@@ -347,17 +347,15 @@ input,textarea,select{font-family:inherit;font-size:16px}
 
 /* AVALIAÇÕES */
 .avaliacoes{background:var(--navy-2);overflow:hidden}
-.reviews-wrap{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-.reviews-track{display:flex;gap:16px;animation:marquee 40s linear infinite;width:max-content}
-.reviews-track:hover{animation-play-state:paused}
-.review{flex:0 0 280px;padding:24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius)}
-@media(min-width:560px){.review{flex:0 0 320px;padding:28px}}
-@media(min-width:880px){.review{flex:0 0 340px;padding:30px}}
+.reviews-wrap{display:grid;grid-template-columns:1fr;gap:16px}
+.review{display:flex;flex-direction:column;padding:24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);min-height:190px}
+@media(min-width:560px){.reviews-wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.review{padding:28px}}
+@media(min-width:880px){.reviews-wrap{grid-template-columns:repeat(3,minmax(0,1fr))}.review{padding:30px}}
 .stars{color:var(--gold);font-size:17px;margin-bottom:10px;letter-spacing:.1em}
 .review p{font-family:'Fraunces',serif;font-size:clamp(15px,2.3vw,17px);line-height:1.5;color:var(--cream);margin-bottom:12px;font-style:italic}
-.reviewer{font-size:13px;color:var(--txt-mut)}
-@keyframes marquee{to{transform:translateX(calc(-280px * 5 - 16px * 5))}}
-@media(min-width:880px){@keyframes marquee{to{transform:translateX(calc(-340px * 5 - 16px * 5))}}}
+.reviewer{display:flex;align-items:center;gap:7px;margin-top:auto;font-size:13px;color:var(--txt-mut)}
+.reviewer i{font-size:10px}
+.reviews-link{display:flex;justify-content:center;margin-top:28px}
 
 /* FAQ */
 .faq{background:var(--navy)}
@@ -561,5 +559,4 @@ input,textarea,select{font-family:inherit;font-size:16px}
 
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
-  .reviews-track{animation:none}
 }
